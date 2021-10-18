@@ -158,11 +158,57 @@ public class Ch03 {
 		Float v6 = 0.1F;
 		System.out.printf("V5 == V6 : %s\n", v5==v6);
 		System.out.printf("V5 == V6 : %s\n", (float)v5==v6);
+		System.out.println("===========================================================================");
+		
+		int charCode = 'A';
+		
+		//유니코드 65보다 크거나 같으며 90보다는 같거나 작은 대문자
+		
+		if ((charCode >= 65) && (charCode<=90)) {
+		System.out.println("대문자");	
+		}
 		
 		
+		if ((charCode >= 97) && (charCode<=122)) {
+			System.out.println("소문자");	
+			}
+		
+		if ((charCode >= 48) && (charCode<=57)) {
+			System.out.println("0~9");	
+			}
+
+		int numValue = 6;
+		if (numValue % 2 ==0 || numValue % 3 ==0) {
+			System.out.println("2또는 3의 배수");	
+			}
+		System.out.println("===========================================================================");		
+		int intResult = 0;
+		intResult +=10;
+		System.out.println(intResult);
+		intResult -=5;
+		System.out.println(intResult);
+		intResult *=3;
+		System.out.println(intResult);
+		intResult /=5;
+		System.out.println(intResult);
+		intResult %=3;
+		System.out.println(intResult);
+
+		System.out.println("===========================================================================");		
+		int score = 95;
+		char grade = (score > 90) ? 'A' : 'B';
+		System.out.printf("등급 : %s\n", grade);
+		System.out.println("===========================================================================");
+		int age = 27;
+		String str9 = (age > 19) ? "성인" : "미성년";
+		System.out.printf("나이는 %d이고 %s 입니다. \n", age, str9);
+		
+		int value = 35;
+		int valResult = (value %3 ==0) ? value%3 : value/3;
+		System.out.println(valResult);
 		
 		
-		
+		a = a+10 // a+=10
 	}
 
 }
